@@ -1,0 +1,129 @@
+*{
+	transition: ease all .2s;
+}
+
+body{
+/*	position: relative;*/
+	background: radial-gradient(red, brown, black);
+}
+
+.navbar{
+	background-color: #8c0000 ;
+	border-bottom: 3px solid red;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #fff;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+  width: 16px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+  transition: ease all .2s;
+}
+
+.sec-accent {
+  background-color: #fafcf5;
+}
+
+.blue {
+  background-color: #9999cc;
+}
+
+#home-section{
+	background: url(https://images.unsplash.com/photo-1507924538820-ede94a04019d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 600px;
+}
+
+#home-section .dark-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 600px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#home-section .home-inner{
+	padding-top: 260px;
+}
+
+.material-icons {
+	vertical-align: middle;
+	font-size: 30px;
+}
+
+.addtocart{
+	height: 40px;
+}
+
+#fav{
+	cursor: pointer;
+	font-size: 28px;
+	color: black;
+	transition: 0.2s ease;
+	color: red;
+}
+
+.card{
+	box-shadow: 1px 1px 3px black;
+}
+
+.bin{
+	transition: 0.3s ease;
+}
+
+.bin:hover{
+	transition: 0.3s ease;
+	transform: scale(2);
+}
